@@ -1,0 +1,17 @@
+import Link from "next/link";
+import Image from 'next/image'
+
+const Navbar = () => {
+    return ( 
+        <nav>
+            <div className = 'logo'>
+               <Image src={'/restaurant.jpg'} width={128} height={70} />
+            </div>
+            <Link href={'/'}><a>Home</a></Link>
+            <Link href={'/about'}><a>About</a></Link>
+            <Link href={'/foodlist'}><a>Food List</a></Link>
+        </nav>
+     );
+}
+ 
+export default Navbar;
